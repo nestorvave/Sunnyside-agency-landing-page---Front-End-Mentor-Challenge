@@ -1,0 +1,499 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  transition: all 0.2s ease-out;
+}
+
+header {
+  background-image: url(../images/desktop/image-header.jpg);
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position-y: 30%;
+  background-position-x: 50%;
+  background-size: cover;
+}
+header svg.arrow {
+  position: absolute;
+  top: 48vh;
+  left: 50%;
+  z-index: 1;
+}
+
+nav {
+  font-size: 18px;
+  font-family: "Fraunces", serif;
+  color: white;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px;
+}
+nav div svg {
+  cursor: pointer;
+}
+nav div .menus {
+  position: absolute;
+  top: 80px;
+  right: 6%;
+  width: 88%;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  align-items: center;
+  z-index: 2;
+}
+nav div .menus li {
+  list-style: none;
+  text-decoration: none;
+  text-align: center;
+  color: #818498;
+  font-family: "Barlow", sans-serif;
+  height: 70px;
+  padding: 18px;
+  width: 50%;
+}
+nav div .menus li a {
+  text-decoration: none;
+  color: #818498;
+  display: block;
+  cursor: pointer;
+}
+nav div .menus li:first-child {
+  height: 1px;
+  pointer-events: none;
+}
+nav div .menus li:last-child {
+  margin-bottom: 10px;
+}
+nav div .menus li:hover {
+  background-color: #fad400;
+  border-radius: 25px;
+}
+nav div .menus li:hover a {
+  transform: scale(1.4);
+  color: black;
+}
+nav div .display {
+  display: none;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 30%;
+}
+section h1 {
+  font-size: 40px;
+  font-family: "Fraunces", serif;
+  color: white;
+  text-align: center;
+  width: 70%;
+  letter-spacing: 5px;
+}
+
+section.services-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+section.services-container .service-box {
+  width: 100%;
+  height: 50vh;
+  border: 1px solid black;
+  border: 0px;
+}
+section.services-container .service-box .text-box {
+  width: 75%;
+  text-align: center;
+}
+section.services-container .service-box .text-box h2 {
+  font-size: 30px;
+  font-family: "Fraunces", serif;
+  display: block;
+  margin: 3px;
+  padding: 8px;
+  margin-top: 5px;
+}
+section.services-container .service-box .text-box p {
+  color: #818498;
+  letter-spacing: 1px;
+  font-size: 16px;
+  font-family: "Barlow", sans-serif;
+  text-align: center;
+  margin-bottom: 40px;
+}
+section.services-container .service-box .text-box h3 {
+  -webkit-text-decoration-color: yellow;
+          text-decoration-color: yellow;
+}
+section.services-container .service-box .text-box h3 a {
+  font-family: "Fraunces", serif;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #19536b;
+  text-decoration: none;
+  border-bottom: 3px solid rgba(230, 189, 96, 0.767);
+}
+section.services-container .brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+}
+section.services-container .egg {
+  background-image: url(../images/desktop/image-transform.jpg);
+  background-size: cover;
+  background-position: center;
+}
+section.services-container .audience {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+}
+section.services-container .rose {
+  background-image: url(../images/desktop/image-stand-out.jpg);
+  background-size: cover;
+  background-position: center;
+}
+section.services-container .red {
+  background-color: #9cd6c8;
+  background-image: url(../images/mobile/image-graphic-design.jpg);
+}
+section.services-container .orange {
+  background-color: #5bc9fc;
+  background-image: url(../images/mobile/image-photography.jpg);
+}
+section.services-container .bg-img {
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position-x: 50%;
+  background-position-y: 42%;
+}
+section.services-container .last-text {
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+  font-family: "Fraunces", serif;
+  position: absolute;
+  top: 60%;
+  left: 10%;
+  color: #23303e;
+}
+section.services-container .last-text h3 {
+  font-size: 19px;
+  padding: 10px;
+  font-weight: bold;
+}
+section.services-container .last-text p {
+  letter-spacing: 1px;
+  font-size: 14px;
+}
+
+.testimonials {
+  width: 100%;
+  text-align: center;
+  height: auto;
+}
+.testimonials h2 {
+  font-size: 30px;
+  letter-spacing: 4px;
+  color: #818498;
+  font-family: "Fraunces", serif;
+  padding: 30px;
+}
+.testimonials .box-testimonials {
+  width: 100%;
+  height: 150vh;
+  display: flex;
+  flex-wrap: wrap;
+}
+.testimonials .box-testimonials .person {
+  width: 85%;
+  height: 50vh;
+}
+.testimonials .box-testimonials .person img {
+  border-radius: 100%;
+}
+.testimonials .box-testimonials .person h3 {
+  color: #23303e;
+  font-size: 17px;
+  margin-bottom: 10px;
+}
+.testimonials .box-testimonials .person h4 {
+  color: black;
+  font-size: 22px;
+  margin-bottom: 5px;
+}
+.testimonials .box-testimonials .person p {
+  color: #a7abae;
+}
+
+div.images {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+}
+div.images .image {
+  height: 50%;
+  width: 50%;
+}
+div.images .milk {
+  background-image: url(../images/mobile/image-gallery-milkbottles.jpg);
+  background-size: cover;
+  background-position: center;
+}
+div.images .plate {
+  background-image: url(../images/mobile/image-gallery-orange.jpg);
+  background-size: cover;
+  background-position: center;
+}
+div.images .ice-cream {
+  background-image: url(../images/mobile/image-gallery-cone.jpg);
+  background-size: cover;
+  background-position: center;
+}
+div.images .bombon {
+  background-image: url(../images/mobile/image-gallery-sugar-cubes.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+footer {
+  width: 100%;
+  height: 60vh;
+  background-color: #91d3c6;
+}
+footer .title {
+  display: flex;
+  margin-top: 40px;
+  height: 150px;
+  width: 100%;
+  margin: 0 auto;
+  justify-content: center;
+  text-align: flex-end;
+  align-items: flex-end;
+}
+footer .title h2 {
+  font-size: 50px;
+  color: #458c7e;
+  font-family: "Fraunces", serif;
+  padding-bottom: 50px;
+}
+footer .about {
+  height: 150px;
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 50px;
+  align-items: center;
+  font-size: 20px;
+  color: #458c7e;
+  font-family: "Barlow", sans-serif;
+}
+footer .social-media {
+  display: flex;
+  justify-content: center;
+}
+footer .social-media div {
+  padding: 5px 12px 5px 12px;
+}
+
+@media (min-width: 700px) {
+  section.services-container .last-text {
+    top: 90%;
+  }
+}
+@media (min-width: 700px) {
+  section.services-container .last-text {
+    top: 70%;
+  }
+
+  div.testimonials {
+    height: 85vh;
+  }
+  div.testimonials h2 {
+    padding: 50px;
+  }
+  div.testimonials .box-testimonials {
+    height: 30%;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+  }
+  div.testimonials .box-testimonials .person {
+    margin: 10px;
+    width: 30%;
+    height: 90%;
+  }
+  div.testimonials .box-testimonials .person img {
+    margin: 25px;
+  }
+  div.testimonials .box-testimonials .person h3 {
+    margin: 40px;
+  }
+  div.testimonials .box-testimonials .person h4 {
+    margin: 10px;
+  }
+  div.testimonials .box-testimonials .person p {
+    margin: 20px;
+  }
+}
+@media (min-width: 900px) {
+  section.services-container .service-box {
+    width: 50%;
+  }
+  section.services-container .service-box .text-box {
+    text-align: start;
+    width: 60%;
+  }
+  section.services-container .service-box .text-box h2 {
+    font-size: 40px;
+    margin-left: 0px;
+    padding: 0 0 20px 0;
+    box-sizing: border-box;
+  }
+  section.services-container .service-box .text-box p {
+    text-align: start;
+  }
+  section.services-container .service-box .last-text {
+    top: 72%;
+  }
+  section.services-container .one {
+    order: -1;
+  }
+  section.services-container .two {
+    order: -2;
+  }
+
+  div.testimonials {
+    height: 100vh;
+  }
+  div.testimonials h2 {
+    padding: 50px;
+  }
+  div.testimonials .box-testimonials {
+    height: 100vh;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+  }
+  div.testimonials .box-testimonials .person {
+    margin: 10px;
+    width: 30%;
+    height: 80%;
+  }
+  div.testimonials .box-testimonials .person img {
+    margin: 25px;
+  }
+  div.testimonials .box-testimonials .person h3 {
+    font-size: 30px;
+    margin: 40px;
+  }
+  div.testimonials .box-testimonials .person h4 {
+    margin: 14px;
+    font-size: 22px;
+  }
+  div.testimonials .box-testimonials .person p {
+    margin: 24px;
+    font-size: 20px;
+  }
+
+  div.images {
+    flex-wrap: nowrap;
+    height: 60vh;
+  }
+  div.images .image {
+    height: 60vh;
+    width: 33%;
+  }
+
+  footer {
+    height: 60vh;
+  }
+  footer .title {
+    display: flex;
+    margin-top: 40px;
+    height: 150px;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+    text-align: flex-end;
+    align-items: flex-end;
+  }
+  footer .title h2 {
+    font-size: 50px;
+    color: #458c7e;
+    font-family: "Fraunces", serif;
+    padding-bottom: 50px;
+  }
+  footer .about {
+    height: 150px;
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 50px;
+    margin: 5px 20px 5px 20px;
+    align-items: center;
+    font-size: 30px;
+    color: #458c7e;
+  }
+  footer .social-media {
+    display: none;
+    justify-content: center;
+  }
+  footer .social-media div {
+    padding: 5px 12px 5px 12px;
+  }
+}
+@media (min-width: 1150px) {
+  header h2 {
+    margin-top: 20px;
+  }
+  header nav {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 120px;
+  }
+  header nav div svg {
+    display: none;
+  }
+  header nav div .menus {
+    position: static;
+    display: block;
+    display: flex;
+    height: 60px;
+    flex-direction: row;
+    width: 650px;
+    background-color: transparent;
+    padding-top: 40px;
+  }
+  header nav div .menus li {
+    padding: 0;
+    height: 30px;
+    padding: 5px 0px 5px 0px;
+  }
+  header nav div .menus li a {
+    color: white;
+  }
+  header nav div .menus li:last-child {
+    margin: 0px;
+  }
+  header nav div .menus li:hover {
+    background-color: white;
+    border-radius: 40px;
+  }
+  header nav div .menus li:hover a {
+    display: block;
+    transform: scale(1.2);
+    color: black;
+  }
+}/*# sourceMappingURL=styles.css.map */
